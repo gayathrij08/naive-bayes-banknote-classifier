@@ -1,133 +1,226 @@
-Naive Bayes Classifier for Banknote Authentication 💸
+# 💸 Banknote Authentication using Naive Bayes Classifier
 
-A Machine Learning web application built using Python and Streamlit to classify whether a banknote is Real or Fake using the Naive Bayes Algorithm.
+An interactive Machine Learning web application developed using **Python** and **Streamlit** to classify whether a banknote is **Real** or **Fake** using the **Naive Bayes Algorithm**.
 
-📌 Project Overview
+This project demonstrates the practical implementation of supervised machine learning for fraud detection and classification tasks.
 
-This project uses the Banknote Authentication Dataset and applies the Naive Bayes Classification Algorithm to predict the authenticity of banknotes based on four statistical features:
+---
 
-Variance
-Skewness
-Curtosis
-Entropy
+## 🚀 Project Overview
 
-The application provides:
+The application allows users to:
 
-Dataset upload
-Dataset visualization
-Model training
-Accuracy calculation
-Real-time prediction through a web interface
-🧠 Algorithm Used
-Naive Bayes Classifier
+- ✅ Upload and analyze the dataset
+- ✅ Train the Naive Bayes model
+- ✅ Visualize dataset patterns
+- ✅ Calculate model accuracy
+- ✅ Predict whether a banknote is Real or Fake
+- ✅ Interact with a user-friendly Streamlit interface
 
-Naive Bayes is a probabilistic machine learning algorithm based on Bayes Theorem.
+---
 
-It assumes that:
+## 📌 Problem Statement
 
-All features are independent of each other.
+Counterfeit currency detection is an important real-world problem in banking and finance systems.
 
-The model calculates probabilities for each class and predicts the class with the highest probability.
+This project uses statistical features extracted from banknote images to classify notes as:
 
-📂 Dataset Used
-Banknote Authentication Dataset
+- **Real Note ✅**
+- **Fake Note ❌**
 
-Features:
+using the **Naive Bayes Machine Learning Algorithm**.
 
-Feature	Description
-Variance	Measures spread of pixel values
-Skewness	Measures asymmetry
-Curtosis	Measures sharpness/tailedness
-Entropy	Measures randomness
-Class	0 = Fake Note, 1 = Real Note
+---
 
-Dataset Source: Kaggle
+## 🧠 Machine Learning Algorithm
 
-🚀 Technologies Used
-Python
-Streamlit
-Pandas
-Statistics Module
-Math Module
-📁 Project Structure
-naive_bayes_project/
+## Naive Bayes Classifier
+
+Naive Bayes is a supervised machine learning algorithm based on **Bayes’ Theorem**.
+
+It works by calculating the probability of a banknote belonging to a specific class based on input feature values.
+
+### Why Naive Bayes?
+- Fast and efficient
+- Works well for classification problems
+- Handles probabilistic predictions effectively
+- Suitable for smaller datasets
+
+---
+
+## 📂 Dataset Information
+
+### Dataset: Banknote Authentication Dataset
+
+The dataset contains statistical features extracted from banknote images.
+
+| Feature | Description |
+|---|---|
+| Variance | Measures spread of image pixel values |
+| Skewness | Measures asymmetry of pixel distribution |
+| Curtosis | Measures sharpness of distribution |
+| Entropy | Measures randomness in the image |
+| Class | 0 = Fake Note, 1 = Real Note |
+
+---
+
+## 🛠️ Technologies Used
+
+- Python
+- Streamlit
+- Pandas
+- Scikit-learn
+- Statistics Module
+- Math Module
+
+---
+
+## 📁 Project Structure
+
+```bash
+naive-bayes-banknote-classifier/
 │
 ├── app.py
 ├── model.py
-├── requirements.txt
 ├── data_banknote_authentication.csv
+├── requirements.txt
 └── README.md
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
-git clone <your-github-repo-link>
-2️⃣ Install Dependencies
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/naive-bayes-banknote-classifier.git
+```
+
+### 2️⃣ Install Required Libraries
+
+```bash
 pip install -r requirements.txt
-3️⃣ Run the Streamlit App
+```
+
+### 3️⃣ Run the Streamlit Application
+
+```bash
 streamlit run app.py
-📊 Model Accuracy
+```
 
-The model achieves approximately:
+---
 
-86% - 99% Accuracy
+## 📊 Model Performance
 
-depending on the train-test split.
+The Naive Bayes model achieves approximately:
 
-Accuracy Formula:
+# ✅ Accuracy: 86% – 99%
 
-Accuracy=
-Total Predictions
-Correct Predictions
-	​
+depending on the train-test split and dataset conditions.
 
-×100
+### Accuracy Formula
 
-💻 Features of the Application
+```text
+Accuracy = (Correct Predictions / Total Predictions) × 100
+```
 
-✅ Upload CSV Dataset
-✅ Train Naive Bayes Model
-✅ View Dataset Preview
-✅ Visualize Feature Distribution
-✅ Predict Real/Fake Banknotes
-✅ Interactive Streamlit UI
-✅ Accuracy Evaluation
+---
 
-🎯 Sample Prediction
-Input
+## 💻 Application Features
+
+✨ Interactive Streamlit Dashboard  
+✨ Dataset Upload Support  
+✨ Real-time Prediction System  
+✨ Automatic Model Training  
+✨ Accuracy Evaluation  
+✨ Data Visualization  
+✨ Banknote Classification System  
+
+---
+
+## 🔍 Sample Prediction
+
+### Input Values
+
+```text
 Variance  = 3.6216
 Skewness  = 8.6661
 Curtosis  = -2.8073
 Entropy   = -0.44699
-Output
+```
+
+### Prediction Result
+
+```text
 Fake Note ❌
-📸 Screenshots
+```
 
-Add screenshots of:
+---
 
-Dataset Preview
-Accuracy Output
-Prediction Interface
-📚 Learning Outcomes
+## 📸 Screenshots
+
+Add project screenshots here:
+
+- Dataset Preview
+- Accuracy Output
+- Prediction Interface
+- Graph Visualization
+
+---
+
+## 📚 Learning Outcomes
 
 Through this project, I learned:
 
-Machine Learning basics
-Naive Bayes Classification
-Probability-based prediction
-Dataset preprocessing
-Streamlit web application development
-Model evaluation using accuracy
-👩‍💻 Author
+- Basics of Machine Learning
+- Naive Bayes Classification
+- Probability-based Prediction
+- Dataset Preprocessing
+- Model Evaluation Techniques
+- Streamlit Web App Development
+- Data Visualization Concepts
 
-Gayathri J
+---
 
-Engineering Student | Machine Learning Enthusiast
+## 🏆 Certifications & Learning
 
-⭐ Future Improvements
-Add Confusion Matrix
-Add Graphical Analytics
-Deploy using Streamlit Cloud
-Improve UI Design
-Add Multiple ML Algorithms
-📜 License
+Along with this project, I completed learning modules and certifications related to:
 
-This project is created for educational and learning purposes.
+- Machine Learning Fundamentals
+- Python Programming
+- Data Visualization
+- Power BI Basics
+- AI & Data Analytics Concepts
+
+These helped strengthen my understanding of:
+- Classification Algorithms
+- Data Analysis
+- Predictive Modeling
+- Interactive Application Development
+
+---
+
+## 🌟 Future Enhancements
+
+- Add Confusion Matrix Visualization
+- Implement Multiple ML Algorithms
+- Improve UI/UX Design
+- Deploy using Streamlit Cloud
+- Add Real-time Analytics Dashboard
+- Integrate Database Support
+
+---
+
+## 👩‍💻 Author
+
+### Gayathri J
+
+B.E CSE (Data Science) Student  
+Aspiring Data Analyst | Machine Learning Enthusiast | AI Learner
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving this repository a ⭐ on GitHub.
